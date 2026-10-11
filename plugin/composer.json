@@ -1,0 +1,12 @@
+{
+  "name": "plugin/wp-advanced",
+  "type": "wordpress-plugin",
+  "autoload": {
+    "psr-4": {
+      "WpAdvanced\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.2"
+  }
+}
