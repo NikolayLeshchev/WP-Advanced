@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     // Точка входа: здесь мы будем подключать наш JS и SCSS
-    entry: './src/assets/js/main.js',
+    entry: './assets/js/main.js',
     
     // Куда сохранять готовые файлы
     output: {

@@ -1,3 +1,4 @@
 /.srv/
 /plugin/vendor/
 /plugin/node_modules/
+/plugin/dist/
