@@ -20,4 +20,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+add_action('wp_enqueue_scripts', function() {
+    // Подключаем собранный CSS
+    wp_enqueue_style(
+        'wp-advanced-main', 
+        plugins_url('dist/main.css', __FILE__), 
+        [], 
+        '1.0.0'
+    );
+
+    // Подключаем собранный JS
+    wp_enqueue_script(
+        'wp-advanced-main', 
+        plugins_url('dist/main.js', __FILE__), 
+        [], 
+        '1.0.0', 
+        true // Загружать в футере
+    );
+});
+
 ( new WpAdvanced\Plugin() )->init();
